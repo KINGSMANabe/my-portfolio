@@ -210,15 +210,13 @@ a{
     height: 400px;
     width: 400px;
     margin: auto 0;
-    border-radius: 60px 0px 60px 0px;
-    padding: 0 50px;
-    background: rgb(198,151,73);
-    
     
 }
 .aboutme-profile> img{
     border-radius: 2rem;
-    height: 250px;
+    border: #C69749 0.1rem solid;
+    border-color: #C69749(163, 163, 163);
+   
  }
 
  .aboutme-divbox{
@@ -402,6 +400,7 @@ a{
 
 #footer p{
     text-align: center;
+    color: #fff;
 }
 
 footer > nav {
@@ -490,7 +489,7 @@ footer > nav {
     }
 
     .aboutme-profile {
-        padding: 0;
+        padding: 10px 0 0 0;
         margin: 0 auto 2rem;
         height: 275px;
         width: 275px
@@ -523,6 +522,8 @@ footer > nav {
     flex-direction: column;
    }
 
+}
+
 @media(max-width:600px){
 
     .navbar{
@@ -547,7 +548,7 @@ footer > nav {
     }
 
     .aboutme-profile > img {
-        height: 220px;
+        height: 190px;
    }
 
     #contact, #footer {
@@ -616,13 +617,19 @@ footer > nav {
 
     .aboutme-profile {
         height: 175px;
+        margin: 0 0 5px 0;
       }
+
+      .aboutme-profile> img{
+        margin: 20px 0 0 0;
+        height: 165px;
+        width: 200px;
+     }
 
    .profile-about, .profile-img{
     height: 190px;
     width: 190px;
    }
-
   
 }
 
