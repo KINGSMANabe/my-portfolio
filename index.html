@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abe Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
@@ -29,18 +29,18 @@
 
  <!-- Hamburger Menu -->
     <nav id="hamburger-nav">
-      <div class="my-name">Abe Appiah</div>
+      <div class="my-name hamburger-my-name">Abe Appiah</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <div class="nav-links menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <div class=" menu-links">
+          <li class="menu"><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li class="menu"><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li class="menu"><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li class="menu"><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
@@ -237,6 +237,11 @@
         </div>
       </section>
 
+   <!-- Scroll up button -->
+      <div class="scroll-up-btn" id="scroll-up-btn" onclick="topFunction()">
+        <img class="up-btn" src="./assets/svg/up-arrow-button-icon.svg" alt="">
+    </div>
+    
  <!-- Footer -->
       <footer id="footer">
         <nav>
@@ -249,8 +254,11 @@
             </ul>
           </div>
         </nav>
-        <p>Copyright © 2023 Abraham Appiah. All Rights Reserved.</p>
+        <p>Copyright © 2024 Abraham Appiah. All Rights Reserved.</p>
       </footer>
-    
+
+    <!-- Scripts -->  
+   <script src="./assets/js/script.js"></script> 
+
 </body>
 </html>
