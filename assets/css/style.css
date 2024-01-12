@@ -40,11 +40,7 @@ li{
 
 
 /*navbar*/
-#nav{
-    background-color: #C69749;
-    border-radius: 0px 0px 0px 500px;
-    margin: 0;
-}
+
 .navbar{
     display: flex;
     height: 14vh;
@@ -96,7 +92,7 @@ li{
 
 .hamburger-menu{
     position: relative;
-    display: inline-block;
+    display: flex;
 }
 
 .hamburger-icon {
@@ -106,6 +102,7 @@ li{
     height: 24px;
     width: 30px;
     cursor: pointer;
+    z-index: 100;
 }
 
 .hamburger-icon span {
@@ -117,40 +114,41 @@ li{
 
 .menu-links {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
-    margin-top: 10px;
-    top: 100%;
-    right: 0;
-    background-color: rgb(255,255,255,0.6);
+    background-color: rgb(255,255,255);
     border-radius: 2px;
-    width:fit-content;
+    width:100vw;
+    height: 100svh;
     max-height: 0; 
     transition: all 0.3s ease-out; 
+    top: 1px;
+    z-index: 90;
 }
 
 .menu-links a {
     display: block;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 800;
     color: black;
-    transition: all 0.3s ease-out;
+    transition: all 0.1s ease-out;
 }
 
 .menu{
-    width: 220px;
+    width: 100svw;
 }
 
-.menu:hover{
-    background: rgb(198,151,73, 0.7);
-    border-bottom: 3px solid black;
-}
 
 .menu-links.open {
-    max-height: 300px;
+    max-height: 100svh;
 }
+
 
 .hamburger-icon.open span:first-child {
    transform: rotate(45deg) translate(10px, 5px);
@@ -177,6 +175,12 @@ li{
 }
 
 /*Profile section*/
+#nav{
+    background-color: #C69749;
+    border-radius: 0px 0px 0px 500px;
+    margin: 0;
+}
+
 .nav-section{
     height: 83vh;
     margin-bottom: 6rem;
@@ -641,6 +645,7 @@ footer > nav {
         font-size: 24px;
     }
 
+   
     .nav-content > h1{
         font-size: 32px;
         
