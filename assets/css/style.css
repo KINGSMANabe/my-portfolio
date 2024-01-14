@@ -436,6 +436,12 @@ li{
     padding-bottom: 1rem;
   }
 
+  .underdev{
+    font-size: 17px;
+    font-weight: 400;
+  }
+
+
 
   /*contact section*/
   #contact{
