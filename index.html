@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abe Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+    <nav>
+        <div class="navbar" id="navbar">
+            <p><span class="my-name">Abe PORTFOLIO</span></p>
+              <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+        </div>
+    </nav>
+
+ <!-- Hamburger Menu -->
+    <nav id="hamburger-nav">
+      <div class="my-name hamburger-my-name">Abe PORTFOLIO</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class=" menu-links">
+        <li class="menu"><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li class="menu"><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li class="menu"><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li class="menu"><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </nav>
+
+ <!-- Nav Profile-->
+    <section id="nav">
+        <div class="nav-section">
+        <div class= "profile-img-container">
+            <img class="profile-img" src="./assets/images/abe_appiah.jpg" height="300" alt="profile image">
+        </div>
+            <div class="nav-content">
+                <p class="p1">Hello, I'm</p>
+                <h1>Abraham Appiah</h1>
+                <p class="p2">IT Professional</p>
+
+                <div class="btn-container nav-button">
+                   <button class="btn btn1" onclick="window.open('./assets/CV/Appiah_IT_Resume_v2.pdf')">Download IT CV</button>
+                   <button class="btn btn2"  onclick="window.open('./assets/CV/Appiah_VA_Resume_v2.pdf')">Download VA CV</button>
+               </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/KINGSMANabe" target="_blank"><img src="./assets/svg/github.svg" height="30" alt="github icon"></a>
+                      <a href="https://www.linkedin.com/in/abraham-appiah-6ab86620a/" target="_blank"><img src="./assets/svg/linkedin.svg" height="30" alt="linkedin icon"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- About -->
+    <section id="about">
+                <p class="section-text-p">Get To Know More</p>
+                <h1 class="section-title">About Me</h1>
+            <div class="about-me-container">
+            <div class="aboutme-profile">
+                <img class="profile-about" src="./assets/images/tenor.gif" height="400" alt="profile picture">
+            </div>
+                <div class="aboutme-divbox">
+                    <div class="container-info">
+                      <div class="container-infobox experience-box">
+                        <img class="container-infobox-icon" src="./assets/svg/work-experience-icon.svg" alt="Experience Icon">
+                        <h3>Experience <br><br></h3>
+                            <ul class="experience-box-li">
+                                <li>- Go Crayons <br>&nbsp;&nbsp;&nbsp;&nbsp;500 hrs Frontend Web development internship </li><br>
+                                <li>- Carelon Global Solutions <br>&nbsp;&nbsp;&nbsp;&nbsp;8 months US-Based Customer Service Representative</li><br>
+                                <li>- DHL Supply Chain Philippines <br>&nbsp;&nbsp;&nbsp;&nbsp;7 months IT Specialist</li>
+                            </ul>
+                    </div>
+
+                    <div class="container-infobox education-box">
+                        <img class="container-infobox-icon" src="./assets/svg/mortarboard-fill.svg" alt="Education Icon">
+                        <h3>Education<br><br></h3>
+                        <p>Bachelor's Degree in Information Technology<br>
+                           Lyceum of the Philippines University - Cavite (2022) 
+                        </p>
+                    </div>  
+                </div>
+                <div class="infobox-box-text">
+                    <p>I'm <strong>Abe</strong>, an IT professional from Imus, Cavite, Philippines. When I'm not in front of a screen, you'll find me out cycling or deep in a playlist it's how I decompress and reset. 
+                       I'm naturally introverted, but I open up easily with the right people around me, and that balance has actually made me a better communicator in professional settings. <br><br>
+
+                       I hold a Bachelor of Science in Information Technology from Lyceum of the Philippines University Cavite (2022) and have built my technical foundation through a 500-hour web development internship at Go Crayons, 
+                       where I contributed to live website builds using HTML, CSS, JavaScript, and WordPress across both front-end and back-end tasks. <br><br>
+
+                       My most substantial role was as an IT Specialist at DHL Supply Chain Philippines, where I delivered L1/L2 support for 400 to 500 users across 24/7 warehouse and office operations. I managed Active Directory, 
+                       enforced MFA policies, monitored network infrastructure, handled IT asset inventory, and kept critical systems running under real operational pressure. Prior to that, I served as a Customer Service Representative at Carelon Global Solutions, 
+                       handling high-volume support for a US-based healthcare insurance account — an experience that sharpened my ability to communicate technical issues clearly to non-technical people. <br><br>
+
+                       I'm currently seeking a role in software development or IT where I can keep building, contribute meaningfully, and grow into bigger responsibilities over time. I'm also open to Virtual Assistant roles — my background in IT support, CRM systems, 
+                       documentation, vendor coordination, and cross-timezone communication gives me a strong set of transferable skills that translate well into remote administrative and operations work.
+                     </p>
+                </div>
+                </div>
+            </div>
+    </section>
+
+ <!-- Skills -->
+    <section id="skills">
+    <p class="section-text-p">Explore My</p>
+    <h1 class="section-title">Skills</h1>
+    <div class="containers skills-details-container">
+        <div class="container-info">
+
+            <!-- Card 1 -->
+            <div class="container-infobox my-skills">
+                <h2 class="skills-sub-title">Development</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/svg/html5.svg" height="40" alt="HTML" class="icon">
+                        <h3>HTML</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/css.svg" height="40" alt="CSS" class="icon">
+                        <h3>CSS</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/javascript.svg" height="40" alt="JavaScript" class="icon">
+                        <h3>JavaScript</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/bootstrap.svg" height="40" alt="Bootstrap" class="icon">
+                        <h3>Bootstrap</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/java-icon.svg" height="40" alt="Java" class="icon">
+                        <h3>Java</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/mysql-icon.svg" height="40" alt="MySQL" class="icon">
+                        <h3>MySQL</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/wordpress-icon.svg" height="40" alt="WordPress" class="icon">
+                        <h3>WordPress</h3>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="container-infobox my-skills">
+                <h2 class="skills-sub-title">Tools & IT Skills</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/svg/github.svg" height="40" alt="Github" class="icon">
+                        <h3>Github</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/visual-studio-code.svg" height="40" alt="VS Code" class="icon">
+                        <h3>VS Code</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/Windows_Server_logo.svg" height="40" width="100" alt="Windows Server" class="icon">
+                        <h3>Windows Server</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/Microsoft_365_(2022).svg" height="40" alt="Microsoft 365" class="icon">
+                        <h3>Microsoft 365</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/slack-icon.svg" height="40" alt="Slack" class="icon">
+                        <h3>Slack</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/Google_Workspace_product_icons_(2020).svg" height="40" width="100" alt="Google Workspace" class="icon">
+                        <h3>Google Workspace</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/sharepoint-icon.svg" height="40" alt="SharePoint" class="icon">
+                        <h3>SharePoint</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/canva-icon.svg" height="40" alt="Canva" class="icon">
+                        <h3>Canva</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/vmware-icon.svg" height="40" alt="VMware" class="icon">
+                        <h3>VMware</h3>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+ <!-- Projects -->
+    <section id="projects">
+        <p class="section-text-p">Browse My Recent</p>
+        <h1 class="section-title">Projects</h1>
+        <div class="swiper-clip-wrapper">
+        <div class="swiper project-swiper">
+          <ul class="swiper-wrapper project-list">
+            <!-- Slide 1 -->
+            <li class="swiper-slide project-item">
+              <img src="./assets/projects/tindog-project.png" alt="Tindog Website" class="project-img">
+              <h2 class="experience-sub-title project-title">Tindog</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/KINGSMANabe/Demo-bootstrap','_blank')">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://kingsmanabe.github.io/Demo-bootstrap/','_blank')">Live Demo</button>
+              </div>
+            </li>
+
+            <!-- Slide 2 -->
+            <li class="swiper-slide project-item">
+              <img src="./assets/projects/barbers-project.png" alt="Barbers Website" class="project-img barbers-temp">
+              <h2 class="experience-sub-title project-title">Barbers  (ongoing)</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/KINGSMANabe/Barbers-webpage-sideproject','_blank')">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://kingsmanabe.github.io/Barbers-webpage-sideproject/','_blank')">Live Demo</button>
+              </div>
+            </li>
+
+            <!-- Slide 3 -->
+            <li class="swiper-slide project-item">
+              <img src="./assets/images/coming-soon.png" alt="Coming Soon" class="project-img">
+              <h2 class="experience-sub-title project-title">Coming Soon</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://')">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://')">Live Demo</button>
+              </div>
+            </li>
+
+            <!-- Slide 4 -->
+            <li class="swiper-slide project-item">
+              <img src="./assets/images/coming-soon.png" alt="Coming Soon" class="project-img">
+              <h2 class="experience-sub-title project-title">Coming Soon</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://')">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://')">Live Demo</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        </div>
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Navigation -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+    </section>
+
+ <!-- Contact -->
+    <section id="contact">
+        <p class="section-text-p">Get in Touch</p>
+        <h1 class="section-title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img src="./assets/svg/emails-icon.svg" alt="Email icon" class="icon contact-icon email-icon">
+            <p><a href="mailto:abrahamappiahwork@gmail.com">Email Me</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img src="./assets/svg/linkedin.svg" alt="LinkedIn icon" class="icon contact-icon">
+            <p><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+
+   <!-- Scroll up button -->
+      <div class="scroll-up-btn" id="scroll-up-btn" onclick="topFunction()">
+        <img class="up-btn" src="./assets/svg/up-arrow-button-icon.svg" alt="">
+    </div>
+    
+ <!-- Footer -->
+      <footer id="footer">
+        <nav>
+          <div class="nav-links-container">
+            <ul class="footer nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p><i>Copyright © 2026 Abraham Appiah. All Rights Reserved.</i></p>
+      </footer>
+
+    <!-- Scripts -->  
+   
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="./assets/js/script.js"></script>
+</body>
+</html>
