@@ -26,6 +26,16 @@ section{
     min-height: fit-content;
 }
 
+.section-text-p{
+    letter-spacing: 1;
+}
+
+.section-title{
+   font-size: 40px;
+   font-weight:bold;
+   text-transform: uppercase;
+ }
+
 a{
     color: black;
     text-decoration: none;
@@ -72,7 +82,14 @@ li{
     list-style: none;
     column-gap: 30px;
     font-size: 17px;
-    font-weight: bold;letter-spacing: 2px;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+
+.dash{
+    text-decoration: none;
+    font-weight: 300;
+   color: #C69749;
 }
 
 .nav-links >li{
@@ -145,11 +162,13 @@ li{
 .menu-links a {
     display: block;
     text-align: center;
+    text-transform: uppercase;
     padding: 20px;
     text-align: center;
     font-size: 1.5rem;
-    font-weight: 800;
-    color: black;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: #C69749;
     transition: all 0.1s ease-out;
 }
 
@@ -206,8 +225,7 @@ li{
 }
 
 .profile-img {
-    border-radius: 50%;
-    border: 5px solid black;
+    border-radius: 100rem;   
 }
 
 .nav-content{
@@ -217,6 +235,7 @@ li{
 }
 
 .nav-content > h1{
+    text-transform: uppercase;
     font-size: 45px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -228,9 +247,9 @@ li{
 }
 
 .p2{
+    text-transform: uppercase;
     font-size: 25px;
     color: black;
-    
     letter-spacing: 2px;
 
 }
@@ -272,7 +291,7 @@ li{
     color: #fff;
     border: none;
     font-size: 12px;
-    letter-spacing: 1px;
+    letter-spacing: 1px;  
 }
 
 .btn2:hover{
@@ -303,7 +322,9 @@ li{
     height: fit-content;
     margin: 0rem 0rem  0rem 0rem;
     padding: 2rem 9rem 3rem 9rem;
-    
+   /* background-image: url('../images/profile_bg_v2.jpg');
+    background-size: cover;
+    background-position: center; */
 }
 
 .section-text-p, .section-title{
@@ -317,10 +338,7 @@ li{
     letter-spacing: 1px;
   }
 
-.section-title{
-   font-size: 40px;
-   font-weight:bold;
- }
+
 
  .about-me-container{
     display: flex;
@@ -449,17 +467,20 @@ article h3 {
     height: fit-content;
     margin: 0rem 0rem  0rem 0rem;
     padding: 2rem 9rem 3rem 9rem;
+    overflow: hidden;
     }
 
     /* This div does the actual clipping — immune to Swiper CDN overrides */
 .swiper-clip-wrapper { 
   overflow: hidden;
   width: 100%;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
+  contain: paint;
 }
 
    /* Swiper container */
    .project-swiper {
+    overflow: hidden !important;
     width: 100%;
     padding-bottom: 3rem !important; /* room for pagination dots */
     margin-top: 2rem;
@@ -832,7 +853,8 @@ footer > li a:hover {
    }
 
    .project-img{
-    height: 200px;
+    height: 190px;
+
    }
 
     #contact, #footer {
@@ -852,7 +874,7 @@ footer > li a:hover {
     }
 
     .section-title{
-        font-size: 32px; 
+        font-size: 30px; 
       }
 
       .aboutme-profile {
@@ -926,11 +948,16 @@ footer > li a:hover {
 #contact{
     height: fit-content;
     padding: 2rem 1rem 0rem 1rem;
+    
 }
 
 #footer{
         height: fit-content;
         padding-bottom: 1rem;
+      }
+
+      .footer  {
+       font-size: 16px;
       }
 }
 
