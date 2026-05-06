@@ -94,7 +94,6 @@ li{
 
 .nav-links >li{
     cursor: pointer;
-    border: 1px solid black;
     text-decoration: none; 
 }
 
