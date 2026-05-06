@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abe Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -49,16 +50,16 @@
     <section id="nav">
         <div class="nav-section">
         <div class= "profile-img-container">
-            <img class="profile-img" src="./assets/images/abe_appiah.jpg" height="400" alt="profile image">
+            <img class="profile-img" src="./assets/images/abe_appiah.jpg" height="300" alt="profile image">
         </div>
             <div class="nav-content">
                 <p class="p1">Hello, I'm</p>
                 <h1>Abraham Appiah</h1>
-                <p class="p2">Frontend Developer</p>
+                <p class="p2">IT Professional</p>
 
                 <div class="btn-container nav-button">
-                    <button class="btn btn1" onclick="window.open('./assets/CV/abrahamappiah_CV.pdf')">Download CV</button>
-                   <button class="btn btn2"  onclick="location.href='./#contact'">Contact info</button>
+                   <button class="btn btn1" onclick="window.open('./assets/CV/Appiah_IT_Resume_v2.pdf')">Download IT CV</button>
+                   <button class="btn btn2"  onclick="window.open('./assets/CV/Appiah_VA_Resume_v2.pdf')">Download VA CV</button>
                </div>
 
                 <div class="social-links">
@@ -81,32 +82,35 @@
                     <div class="container-info">
                       <div class="container-infobox experience-box">
                         <img class="container-infobox-icon" src="./assets/svg/work-experience-icon.svg" alt="Experience Icon">
-                        <h3>Experience
+                        <h3>Experience <br><br></h3>
                             <ul class="experience-box-li">
-                                <li>-500 hrs Frontend Web development (Intern) </li>
-                                <li>-Udemy FullStack Web Development Course</li>
-                                <li>-8 months CustomerService for a US-based healthcare insurance company</li>
+                                <li>- Go Crayons <br>&nbsp;&nbsp;&nbsp;&nbsp;500 hrs Frontend Web development internship </li><br>
+                                <li>- Carelon Global Solutions <br>&nbsp;&nbsp;&nbsp;&nbsp;8 months US-Based Customer Service Representative</li><br>
+                                <li>- DHL Supply Chain Philippines <br>&nbsp;&nbsp;&nbsp;&nbsp;7 months IT Specialist</li>
                             </ul>
-                        </h3>
                     </div>
 
                     <div class="container-infobox education-box">
                         <img class="container-infobox-icon" src="./assets/svg/mortarboard-fill.svg" alt="Education Icon">
-                        <h3>Education</h3>
+                        <h3>Education<br><br></h3>
                         <p>Bachelor's Degree in Information Technology<br>
                            Lyceum of the Philippines University - Cavite (2022) 
                         </p>
                     </div>  
                 </div>
                 <div class="infobox-box-text">
-                    <p>Hello, My name is Abraham Appiah, half Filipino half African-American you can call me <strong>Abe</strong> for short, an introverted person and sometimes a procrastinating potato lying on the couch😅. Kidding aside, I'm trying my best to be the best version of myself by doing 
-                       productive routines like incorporating simple small steps coding hobbies, self-improvement, and developing a discipline to stay motivated.<br><br>
-                       I earned my Bachelor's degree in I.T. in September of 2022. I've been applying for an entry-level software engineering position since then unfortunately, I haven't struck that luck yet, so  I took a pause
-                       from my desired career in I.T and tried a job outside of my comfort zone which is being a customer service representative for 8 months to build confidence in my communication skills and to be brave enough to overcome my fear 
-                       in communicating with others. Doing a customer service job made me realize that the only thing that limits a person is his/her mind if you don't take a step and be brave enough you will never grow.
-                       Before accepting the job I couldn't imagine that I would survive or even last a month but here I made it and learned a lot from it.<br><br>
-                       
-                       My next goal is to land an entry-level job in software development, and I will gradually be confident enough to aim for higher roles😁.
+                    <p>I'm <strong>Abe</strong>, an IT professional from Imus, Cavite, Philippines. When I'm not in front of a screen, you'll find me out cycling or deep in a playlist it's how I decompress and reset. 
+                       I'm naturally introverted, but I open up easily with the right people around me, and that balance has actually made me a better communicator in professional settings. <br><br>
+
+                       I hold a Bachelor of Science in Information Technology from Lyceum of the Philippines University Cavite (2022) and have built my technical foundation through a 500-hour web development internship at Go Crayons, 
+                       where I contributed to live website builds using HTML, CSS, JavaScript, and WordPress across both front-end and back-end tasks. <br><br>
+
+                       My most substantial role was as an IT Specialist at DHL Supply Chain Philippines, where I delivered L1/L2 support for 400 to 500 users across 24/7 warehouse and office operations. I managed Active Directory, 
+                       enforced MFA policies, monitored network infrastructure, handled IT asset inventory, and kept critical systems running under real operational pressure. Prior to that, I served as a Customer Service Representative at Carelon Global Solutions, 
+                       handling high-volume support for a US-based healthcare insurance account — an experience that sharpened my ability to communicate technical issues clearly to non-technical people. <br><br>
+
+                       I'm currently seeking a role in software development or IT where I can keep building, contribute meaningfully, and grow into bigger responsibilities over time. I'm also open to Virtual Assistant roles — my background in IT support, CRM systems, 
+                       documentation, vendor coordination, and cross-timezone communication gives me a strong set of transferable skills that translate well into remote administrative and operations work.
                      </p>
                 </div>
                 </div>
@@ -115,116 +119,147 @@
 
  <!-- Skills -->
     <section id="skills">
-        <p class="section-text-p">Explore My</p>
-        <h1 class="section-title">Skills</h1>
-        <div class="containers skills-details-container">
-            <div class="container-info">
-                <div class="container-infobox my-skills">
-                    <h2 class="skills-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/svg/html5.svg" height="40"   alt="Skill icon" class="icon">
-                            <div>
-                              <h3>HTML</h3>
-                              <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/svg/css.svg" height="40" alt="Skill icon" class="icon">
-                            <div>
-                              <h3>CSS</h3>
-                              <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/svg/javascript.svg" height="40" alt="Skill icon" class="icon">
-                            <div>
-                              <h3>Javascript</h3>
-                              <p>Basic</p>
-                            </div>
-                        </article>        
-                    </div>
-                </div>
-                <div class="container-infobox my-skills">
-                    <h2 class="skills-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/svg/github.svg" height="40" alt="Skill icon" class="icon">
-                            <div>
-                              <h3>Github</h3>
-                              <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/svg/bootstrap.svg" height="40" alt="Skill icon" class="icon">
-                            <div>
-                              <h3>Bootstrap</h3>
-                              <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/svg/visual-studio-code.svg" height="40" alt="Skill icon" class="icon">
-                            <div>
-                              <h3>VisualStudio</br>Code</h3>
-                              <p>Intermediate</p>
-                            </div>
-                        </article>         
-                    </div>
+    <p class="section-text-p">Explore My</p>
+    <h1 class="section-title">Skills</h1>
+    <div class="containers skills-details-container">
+        <div class="container-info">
+
+            <!-- Card 1 -->
+            <div class="container-infobox my-skills">
+                <h2 class="skills-sub-title">Development</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/svg/html5.svg" height="40" alt="HTML" class="icon">
+                        <h3>HTML</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/css.svg" height="40" alt="CSS" class="icon">
+                        <h3>CSS</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/javascript.svg" height="40" alt="JavaScript" class="icon">
+                        <h3>JavaScript</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/bootstrap.svg" height="40" alt="Bootstrap" class="icon">
+                        <h3>Bootstrap</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/java-icon.svg" height="40" alt="Java" class="icon">
+                        <h3>Java</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/mysql-icon.svg" height="40" alt="MySQL" class="icon">
+                        <h3>MySQL</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/wordpress-icon.svg" height="40" alt="WordPress" class="icon">
+                        <h3>WordPress</h3>
+                    </article>
                 </div>
             </div>
+
+            <!-- Card 2 -->
+            <div class="container-infobox my-skills">
+                <h2 class="skills-sub-title">Tools & IT Skills</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/svg/github.svg" height="40" alt="Github" class="icon">
+                        <h3>Github</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/visual-studio-code.svg" height="40" alt="VS Code" class="icon">
+                        <h3>VS Code</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/Windows_Server_logo.svg" height="40" width="100" alt="Windows Server" class="icon">
+                        <h3>Windows Server</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/Microsoft_365_(2022).svg" height="40" alt="Microsoft 365" class="icon">
+                        <h3>Microsoft 365</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/slack-icon.svg" height="40" alt="Slack" class="icon">
+                        <h3>Slack</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/Google_Workspace_product_icons_(2020).svg" height="40" width="100" alt="Google Workspace" class="icon">
+                        <h3>Google Workspace</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/sharepoint-icon.svg" height="40" alt="SharePoint" class="icon">
+                        <h3>SharePoint</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/canva-icon.svg" height="40" alt="Canva" class="icon">
+                        <h3>Canva</h3>
+                    </article>
+                    <article>
+                        <img src="./assets/svg/vmware-icon.svg" height="40" alt="VMware" class="icon">
+                        <h3>VMware</h3>
+                    </article>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
  <!-- Projects -->
     <section id="projects">
         <p class="section-text-p">Browse My Recent</p>
         <h1 class="section-title">Projects</h1>
-        <div class="project-details-container">
-            <div class="container-info">
-                <div class="container-infobox color-container">
-                    <div class="article-container">
-                      <img src="./assets/projects/tindog-project.png" alt="Tindog Website" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Tindog</h2>
-                    <div class="btn-container">
-                      <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/KINGSMANabe/Demo-bootstrap','_blank')">
-                        Github
-                      </button>
-                      <button class="btn btn-color-2 project-btn" onclick="window.open('https://kingsmanabe.github.io/Demo-bootstrap/','_blank')">
-                        Live Demo
-                      </button>
-                    </div>
-                </div>
-                <div class="container-infobox color-container">
-                    <div class="article-container">
-                      <img src="./assets/projects/barbers-project.png" alt="Project 1" class="project-img barbers-temp">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Barbers <br> <span class="underdev">(Under development)</span></h2>
-                    <div class="btn-container">
-                      <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/KINGSMANabe/Barbers-webpage-sideproject','_blank')">
-                        Github
-                      </button>
-                      <button class="btn btn-color-2 project-btn" onclick="window.open('https://kingsmanabe.github.io/Barbers-webpage-sideproject/','_blank')">
-                        Live Demo
-                      </button>
-                    </div>
-                </div>
-                <div class="container-infobox color-container">
-                    <div class="article-container">
-                      <img src="./assets/images/coming-soon.png" alt="More Projects to come" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">More Soon!</h2>
-                    <div class="btn-container">
-                      <button class="btn btn-color-2 project-btn" onclick="window.open('https://')">
-                        Github
-                      </button>
-                      <button class="btn btn-color-2 project-btn" onclick="window.open('https://')">
-                        Live Demo
-                      </button>
-                    </div>
-                </div>  
-            </div>
+        <div class="swiper-clip-wrapper">
+        <div class="swiper project-swiper">
+          <ul class="swiper-wrapper project-list">
+            <!-- Slide 1 -->
+            <li class="swiper-slide project-item">
+              <img src="./assets/projects/tindog-project.png" alt="Tindog Website" class="project-img">
+              <h2 class="experience-sub-title project-title">Tindog</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/KINGSMANabe/Demo-bootstrap','_blank')">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://kingsmanabe.github.io/Demo-bootstrap/','_blank')">Live Demo</button>
+              </div>
+            </li>
+
+            <!-- Slide 2 -->
+            <li class="swiper-slide project-item">
+              <img src="./assets/projects/barbers-project.png" alt="Barbers Website" class="project-img barbers-temp">
+              <h2 class="experience-sub-title project-title">Barbers  (ongoing)</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/KINGSMANabe/Barbers-webpage-sideproject','_blank')">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://kingsmanabe.github.io/Barbers-webpage-sideproject/','_blank')">Live Demo</button>
+              </div>
+            </li>
+
+            <!-- Slide 3 -->
+            <li class="swiper-slide project-item">
+              <img src="./assets/images/coming-soon.png" alt="Coming Soon" class="project-img">
+              <h2 class="experience-sub-title project-title">Coming Soon</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://')">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://')">Live Demo</button>
+              </div>
+            </li>
+
+            <!-- Slide 4 -->
+            <li class="swiper-slide project-item">
+              <img src="./assets/images/coming-soon.png" alt="Coming Soon" class="project-img">
+              <h2 class="experience-sub-title project-title">Coming Soon</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://')">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://')">Live Demo</button>
+              </div>
+            </li>
+          </ul>
         </div>
+        </div>
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Navigation -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
     </section>
 
  <!-- Contact -->
@@ -260,11 +295,12 @@
             </ul>
           </div>
         </nav>
-        <p>Copyright © 2024 Abraham Appiah. All Rights Reserved.</p>
+        <p><i>Copyright © 2026 Abraham Appiah. All Rights Reserved.</i></p>
       </footer>
 
     <!-- Scripts -->  
-   <script src="./assets/js/script.js"></script> 
-
+   
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="./assets/js/script.js"></script>
 </body>
 </html>

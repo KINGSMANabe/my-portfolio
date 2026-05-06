@@ -1,6 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 html{
     scroll-behavior: smooth;
 }
@@ -37,6 +36,11 @@ a, .btn{
     transition: all 0.3s ease-out; 
 }
 
+.btn{
+    font-size: 14px;
+    font-weight: 600;
+}
+
 li{
     list-style: none;
 }
@@ -44,17 +48,21 @@ li{
 
 /*navbar*/
 
+#navbar{
+    padding: 0 10rem;
+}
 .navbar{
+    text-transform: uppercase;
     display: flex;
-    height: 14vh;
-    justify-content: space-around;
+    height: 10vh;
+    justify-content:space-between;
     align-items: center;
     color: #fff;
     background-color: rgb(3, 2, 0);
 }
 .my-name{
     font-size: 30px;
-    font-weight: 700;
+    font-weight: bold;
     color: #C69749;
     letter-spacing: -2px;
 }
@@ -62,13 +70,14 @@ li{
 .nav-links{
     display: flex;
     list-style: none;
-    column-gap: 32px;
-    font-size: 24px; 
+    column-gap: 30px;
+    font-size: 17px;
+    font-weight: bold;letter-spacing: 2px;
 }
 
 .nav-links >li{
     cursor: pointer;
-    border: 2px solid black;
+    border: 1px solid black;
     text-decoration: none; 
 }
 
@@ -163,7 +172,7 @@ li{
  }
 
  .hamburger-icon.open span:last-child {
-    transform: rotate(-45deg) translate(10px, -5px);
+    transform: rotate(-45deg) translate(7px, -4px);
  }
 
  .hamburger-icon span:first-child {
@@ -183,14 +192,15 @@ li{
     background-color: #C69749;
     border-radius: 0px 0px 0px 500px;
     margin: 0;
+    height: 90vh;
+    
 }
 
 .nav-section{
     height: 83vh;
-    margin-bottom: 6rem;
     display: flex;
     color: black;
-    column-gap: 80px;
+    column-gap: 5rem;
     justify-content: center;
     align-items: center;
 }
@@ -203,33 +213,38 @@ li{
 .nav-content{
     display: block;
     text-align: center;
+    line-height: 1.5;
 }
 
 .nav-content > h1{
-    font-size: 48px;
+    font-size: 45px;
     font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .p1{
-    font-size: 16px;
+    font-size: 20px;
+    letter-spacing: 2px;
 }
 
 .p2{
-    font-size: 28px;
+    font-size: 25px;
     color: black;
+    
+    letter-spacing: 2px;
 
 }
 
 .btn-container{
    display: inline-flex;
    text-align: center;
-   column-gap: 15px;
-   margin: 16px 0px 16px 0px;
+   column-gap: 10px;
+   margin: 20px 0px 15px 0px;
 }
 
 .btn{
     align-items: center;
-    font-weight:600;
+    font-weight:bold;
     border-radius: 2rem;
     background-color: #fff;
     padding: 1rem;
@@ -241,6 +256,9 @@ li{
 .btn1{
     border: 2px solid #C69749;
     color: black;
+    font-size: 12px;
+    letter-spacing: 1px;
+
 }
 
 .btn1:hover{
@@ -253,7 +271,8 @@ li{
     background-color: black;
     color: #fff;
     border: none;
-    
+    font-size: 12px;
+    letter-spacing: 1px;
 }
 
 .btn2:hover{
@@ -270,6 +289,8 @@ li{
 
 .social-links img{
     border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 .social-links img:hover{
@@ -279,20 +300,25 @@ li{
 /*about me section*/
 #about{
     position: relative;
+    height: fit-content;
+    margin: 0rem 0rem  0rem 0rem;
+    padding: 2rem 9rem 3rem 9rem;
+    
 }
 
 .section-text-p, .section-title{
    text-align: center;
    line-height: 1.5;
+   
 }
 
 .section-text-p{
     font-size: 16px;
-    
+    letter-spacing: 1px;
   }
 
 .section-title{
-   font-size: 48px;
+   font-size: 40px;
    font-weight:bold;
  }
 
@@ -300,6 +326,7 @@ li{
     display: flex;
     height: 80%;
     gap: 5rem;
+   
  }
 
 
@@ -312,8 +339,9 @@ li{
     margin: auto 0;
     
 }
-.aboutme-profile> img{
+.profile-about{
     border-radius: 2rem;
+    margin-top: -25px;
  }
 
  .aboutme-divbox{
@@ -346,25 +374,37 @@ li{
 
  .experience-box-li{
     list-style: none;
-    color: rgb(85, 85, 85);
+    color: #333333;
     font-size: 16px;
     font-weight: 400;
+        text-align: left;
+        line-height: 1.5;
+         margin-top: 0.5rem;
  }
 
  .container-infobox > p{
     color: rgb(85, 85, 85);
     font-weight: 400;
+        font-size: 16px;
+        margin-top: 1rem;
  }
 
  .infobox-box-text{
-    color: rgb(85, 85, 85);
+    color: #333333;
     font-weight: 400;
     text-align: justify;
+        font-size: 16px;
+        margin-top: 0.5rem;
+        line-height: 1.5;
  }
 
  /*skills section*/
  #skills{
     position: relative;
+    height: fit-content;
+    margin: 0rem 0rem  0rem 0rem;
+    padding: 3rem 9rem 3rem 9rem;
+    background-color: whitesmoke;
  }
 
  .skills-details-container{
@@ -374,24 +414,95 @@ li{
  }
 
  .skills-sub-title{
-    color: rgb(85, 85, 85);
+    color: black;
     font-weight: 500;
     font-size: 1.75rem;
     margin-bottom: 2rem;
  }
 
- .article-container{
+.article-container {
     display: flex;
-    text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 2.5rem;
-    justify-content: space-around;
- }
+    gap: 1.5rem;
+    justify-content: center;  /* ← center icons instead of space-around */
+    align-items: flex-start;  /* ← keep icons top-aligned */
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80px;              /* ← fixed width stops uneven wrapping */
+    gap: 0.4rem;
+}
+
+article h3 {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
 
    /*projects section*/
    #projects{
     position: relative;
+    height: fit-content;
+    margin: 0rem 0rem  0rem 0rem;
+    padding: 2rem 9rem 3rem 9rem;
+    }
+
+    /* This div does the actual clipping — immune to Swiper CDN overrides */
+.swiper-clip-wrapper { 
+  overflow: hidden;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+   /* Swiper container */
+   .project-swiper {
+    width: 100%;
+    padding-bottom: 3rem !important; /* room for pagination dots */
+    margin-top: 2rem;
+   }
+
+   /* Each slide card */
+   .project-list {
+    align-items: stretch;
+   }
+
+   .project-item {
+    background: #fff;
+    border-radius: 2rem;
+    border: 1px solid rgb(163, 163, 163);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   }
+
+   .project-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+   }
+
+   .project-img {
+    border-radius: 1.5rem 1.5rem 0 0;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    padding: 0;
+   }
+
+   .project-title {
+    margin: 1rem 1.2rem 0.5rem;
+    font-size: 1.2rem;
+   }
+
+   .project-item .btn-container {
+    padding: 0.5rem 1.2rem 1.2rem;
+    justify-content: flex-start;
+    margin: 0;
    }
 
    .project-details-container{
@@ -424,22 +535,21 @@ li{
     background-color: #C69749;
    }
 
-
-.btn-color-2 {
+   .btn-color-2 {
     background: none;
-}
+   }
 
-.project-img {
-    border-radius: 2rem;
-    width: 90%;
-    height: 90%;
-    padding-bottom: 1rem;
-  }
+   
+   /* Swiper nav arrow colors */
+   .swiper-button-next,
+   .swiper-button-prev {
+    color: #C69749 !important;
+    font-weight:900;
+   }
 
-  .underdev{
-    font-size: 17px;
-    font-weight: 400;
-  }
+   .swiper-pagination-bullet-active {
+    background: #C69749 !important;
+   }
 
 
 
@@ -550,6 +660,7 @@ footer > nav {
     justify-content: space-around;
     align-items: center;
     height: 17vh;
+    text-transform: uppercase;
 }
 
 .nav-links-container{
@@ -559,6 +670,16 @@ footer > nav {
 
 .footer > li a {
   color: #fff;
+}
+
+footer > li a:hover {
+  color: #C69749;
+  border-bottom: 2px solid #C69749;
+  transition: all 0.3s ease-out;
+}
+
+.footer > p{
+    margin-top: 1rem;
 }
 
 
@@ -640,11 +761,34 @@ footer > nav {
    .project-details-container{
     flex-direction: column;
    }
+
+   #projects {
+    padding: 2rem 2rem 3rem 2rem; /* keep bottom padding for dots */
+    margin: 0;
+   }
 }
 
 @media(max-width:600px){
 
-  
+  section{
+    height: fit-content;
+  }
+
+  #hamburger-nav {
+    height: fit-content;
+    padding: 1rem 0;
+   }
+
+   .hamburger-icon {
+    width: 25px;
+    height: 20px;
+   }
+
+   .nav-section{
+    flex-direction: column;
+    row-gap: 30px;
+    height: fit-content;
+  }
     .my-name{
         font-size: 24px;
     }
@@ -660,8 +804,35 @@ footer > nav {
 
     }
 
+    #about{
+        height: fit-content;
+        padding: 2rem 1.2rem 2rem 1.2rem;
+    }
+
+    .experience-box-li{
+        text-align:center;
+        margin: 1rem 0.5rem 0.5rem 0.5rem;
+        
+ }
+
+
     .aboutme-profile > img {
         height: 190px;
+        width: 190px;
+   }
+
+    .profile-about{
+        margin: 0;
+        padding: 0;
+   }
+
+   #projects {
+    margin: 0;
+    padding: 1rem 1rem 3rem 1rem;
+   }
+
+   .project-img{
+    height: 200px;
    }
 
     #contact, #footer {
@@ -704,6 +875,10 @@ footer > nav {
         gap: 0.5rem;
         text-align: center;
       }
+
+      .footer > p {
+        margin: 0;
+      }
 }
 
 @media(max-width:435px){
@@ -731,26 +906,32 @@ footer > nav {
         row-gap: 10px;
     }
 
+    #nav{
+        height: 100vh;
+    }
+
     .aboutme-profile {
         height: 175px;
         margin: 10px 0 5px 0;
       }
 
-      .aboutme-profile> img{
-        margin: 20px 0 0 0;
-        height: 165px;
-        width: 200px;
-     }
-
-   .profile-about, .profile-img{
-    height: 190px;
-    width: 190px;
+      .profile-img{
+        height: 175px;
+      }
+       
+     
+   .project-item{
+    margin: 0rem 0rem 0rem 0rem;
    }
+#contact{
+    height: fit-content;
+    padding: 2rem 1rem 0rem 1rem;
 }
 
-@media(max-width:390px){
-    #footer{
-        height: 45vh;
-        padding-bottom: 2rem;
+#footer{
+        height: fit-content;
+        padding-bottom: 1rem;
       }
 }
+
+
