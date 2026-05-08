@@ -59,17 +59,41 @@ li{
 /*navbar*/
 
 #navbar{
+    position: relative;
     padding: 0 10rem;
 }
+
 .navbar{
     text-transform: uppercase;
     display: flex;
-    height: 10vh;
+    height: 9vh;
     justify-content:space-between;
     align-items: center;
     color: #fff;
     background-color: rgb(3, 2, 0);
 }
+
+#navbar.sticky{
+    position: fixed;
+    height: 5vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s ease;
+    opacity: 75%;
+}
+
+#hamburger-nav.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s ease;
+    opacity: 90%;
+}
+
 .my-name{
     font-size: 30px;
     font-weight: bold;
@@ -94,6 +118,7 @@ li{
 
 .nav-links >li{
     cursor: pointer;
+   
     text-decoration: none; 
 }
 
@@ -112,6 +137,12 @@ li{
     color:#C69749;
     border-bottom:2px solid #C69749;
     transition: all 1.5s ease-out;  
+}
+
+/* Desktop nav active link */
+.nav-links li a.active {
+    color: #C69749;
+    border-bottom: 2px solid #C69749;
 }
 
 /*Hamburger menu*/
@@ -210,7 +241,7 @@ li{
     background-color: #C69749;
     border-radius: 0px 0px 0px 500px;
     margin: 0;
-    height: 90vh;
+    height: 95vh;
     
 }
 
@@ -273,9 +304,9 @@ li{
 
 .btn1{
     border: 2px solid #C69749;
-    color: black;
+    color: #C69749;
     font-size: 12px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 
 }
 
@@ -287,10 +318,10 @@ li{
 
 .btn2{
     background-color: black;
-    color: #fff;
+    color: #C69749;
     border: none;
     font-size: 12px;
-    letter-spacing: 1px;  
+    letter-spacing: 2px;  
 }
 
 .btn2:hover{
@@ -341,25 +372,23 @@ li{
 
  .about-me-container{
     display: flex;
-    height: 80%;
-    gap: 5rem;
-   
- }
-
-
-.aboutme-profile{
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
-    
-}
-.profile-about{
-    border-radius: 2rem;
-    margin-top: -25px;
+    height: fit-content;
+    padding: 30px 0px 10px 0px;
  }
+
+
+
+.profile-about{
+    height: 394px;
+    width: 700px;
+    border-radius: 2rem 0rem 2rem 0rem;
+    border: 3px solid #C69749;
+ }
+
+
 
  .aboutme-divbox{
   display: flex;
@@ -399,6 +428,11 @@ li{
          margin-top: 0.5rem;
  }
 
+ .experience-box-li span{
+    font-weight: 600;
+    color: #C69749;
+ }
+
  .container-infobox > p{
     color: rgb(85, 85, 85);
     font-weight: 400;
@@ -428,13 +462,18 @@ li{
     display: flex;
     justify-content: center;
     flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        gap: 2rem;
  }
 
  .skills-sub-title{
-    color: black;
+    color: #333333;
     font-weight: 500;
     font-size: 1.75rem;
     margin-bottom: 2rem;
+
+    
  }
 
 .article-container {
@@ -451,13 +490,17 @@ article {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    color: #C69749;
+    font-weight: bold;
     width: 80px;              /* ← fixed width stops uneven wrapping */
     gap: 0.4rem;
+    
 }
 
 article h3 {
     font-size: 0.85rem;
     font-weight: 600;
+    
 }
 
    /*projects section*/
@@ -752,16 +795,21 @@ footer > li a:hover {
     }
 
     .aboutme-profile {
-        padding: 10px 0 0 0;
-        margin: 0 auto 2rem;
-        height: 275px;
-        width: 275px
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        height: fit-content;
+       
+        
    }
 
-   .profile-about{
-      padding-top: 20px;
-      height: 275px;
-      width: 275px;
+   .profile-about{    
+        border-radius: 2rem 0rem 2rem 0rem;
+        height: 338px;
+        width: 600px;
+        padding: 0;
    }
 
     .about-me-container{
@@ -836,13 +884,20 @@ footer > li a:hover {
  }
 
 
-    .aboutme-profile > img {
-        height: 190px;
-        width: 190px;
+    .aboutme-profile  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        height: fit-content;
+
    }
 
-    .profile-about{
-        margin: 0;
+    .profile-about{    
+        border-radius: 2rem 0rem 2rem 0rem;
+        height: 200px;
+        width: 356px;
         padding: 0;
    }
 
@@ -928,10 +983,17 @@ footer > li a:hover {
     }
 
     #nav{
-        height: 100vh;
+        height: 100svh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10rem;
+        
     }
 
+
     .aboutme-profile {
+        justify-content: center;
         height: 175px;
         margin: 10px 0 5px 0;
       }
