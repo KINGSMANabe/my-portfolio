@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 html{
     scroll-behavior: smooth;
 }
@@ -27,7 +28,8 @@ section{
 }
 
 .section-text-p{
-    letter-spacing: 1;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 
 .section-title{
@@ -56,7 +58,7 @@ li{
 }
 
 
-/*navbar*/
+/*navbar-------------------------------------------------------------------*/
 
 #navbar{
     position: relative;
@@ -81,7 +83,7 @@ li{
     width: 100%;
     z-index: 1000;
     transition: top 0.3s ease;
-    opacity: 75%;
+    background-color: rgb(3, 2, 0);
 }
 
 #hamburger-nav.sticky{
@@ -91,7 +93,7 @@ li{
     width: 100%;
     z-index: 1000;
     transition: top 0.3s ease;
-    opacity: 90%;
+    background-color: rgb(3, 2, 0);
 }
 
 .my-name{
@@ -110,10 +112,10 @@ li{
     letter-spacing: 6px;
 }
 
-.dash{
-    text-decoration: none;
+.dash {
     font-weight: 300;
-   color: #C69749;
+    color: #C69749;
+    cursor: default;
 }
 
 .nav-links >li{
@@ -145,7 +147,7 @@ li{
     border-bottom: 2px solid #C69749;
 }
 
-/*Hamburger menu*/
+/*Hamburger menu----------------------------------------*/
 #hamburger-nav{
     display: none;
 }
@@ -206,11 +208,9 @@ li{
     width: 100svw;
 }
 
-
 .menu-links.open {
     max-height: 100svh;
 }
-
 
 .hamburger-icon.open span:first-child {
    transform: rotate(45deg) translate(10px, 5px);
@@ -236,7 +236,7 @@ li{
     transform: none;
 }
 
-/*Profile section*/
+/*Hero section--------------------------------------------------------------*/
 #nav{
     background-color: #C69749;
     border-radius: 0px 0px 0px 500px;
@@ -281,7 +281,6 @@ li{
     font-size: 25px;
     color: black;
     letter-spacing: 2px;
-
 }
 
 .btn-container{
@@ -346,7 +345,7 @@ li{
    transform: scale(1.05, 1.05);
 }
 
-/*about me section*/
+/*about me section----------------------------------------------------------*/
 #about{
     position: relative;
     height: fit-content;
@@ -354,21 +353,18 @@ li{
     padding: 2rem 9rem 3rem 9rem;
    /* background-image: url('../images/profile_bg_v2.jpg');
     background-size: cover;
-    background-position: center; */
+    background-position: center; try lang*/
 }
 
 .section-text-p, .section-title{
    text-align: center;
    line-height: 1.5;
-   
 }
 
 .section-text-p{
     font-size: 16px;
     letter-spacing: 1px;
-  }
-
-
+}
 
  .about-me-container{
     display: flex;
@@ -379,29 +375,23 @@ li{
     padding: 30px 0px 10px 0px;
  }
 
-
-
 .profile-about{
     height: 394px;
-    width: 700px;
-    border-radius: 2rem 0rem 2rem 0rem;
-    border: 3px solid #C69749;
+    width: 699px;
+    border-radius: 2rem 2rem 2rem 2rem;
+    border: 4px solid #C69749;
  }
-
-
 
  .aboutme-divbox{
   display: flex;
   justify-content: center;
-  flex-direction: column;
-   
+  flex-direction: column; 
  }
 
  .container-info{
     display: flex;
     gap: 2rem;
     margin: 2rem 0 2rem 0;
-
  }
 
  .container-infobox{
@@ -449,7 +439,7 @@ li{
         line-height: 1.5;
  }
 
- /*skills section*/
+ /*skills section----------------------------------------------------------*/
  #skills{
     position: relative;
     height: fit-content;
@@ -471,9 +461,7 @@ li{
     color: #333333;
     font-weight: 500;
     font-size: 1.75rem;
-    margin-bottom: 2rem;
-
-    
+    margin-bottom: 2rem;  
  }
 
 .article-container {
@@ -499,11 +487,10 @@ article {
 
 article h3 {
     font-size: 0.85rem;
-    font-weight: 600;
-    
+    font-weight: 600; 
 }
 
-   /*projects section*/
+   /*projects section----------------------------------------------------------*/
    #projects{
     position: relative;
     height: fit-content;
@@ -525,6 +512,7 @@ article h3 {
     overflow: hidden !important;
     width: 100%;
     padding-bottom: 3rem !important; /* room for pagination dots */
+    padding-right: 10px !important; /* room for nav arrows */
     margin-top: 2rem;
    }
 
@@ -616,7 +604,7 @@ article h3 {
 
 
 
-  /*contact section*/
+  /*contact section----------------------------------------------------------*/
   #contact{
     background-color: #C69749;
     margin: 0;
@@ -660,7 +648,7 @@ article h3 {
 }
 
 
-/*scroll up button section*/
+/*scroll up button section----------------------------------------------------------*/
 .scroll-up-btn{
     display: none;
     position: fixed;
@@ -704,7 +692,7 @@ article h3 {
     background-color: #555;
 }
 
- /*footer section*/
+ /*footer section----------------------------------------------------------*/
 #footer {
     height: 26vh;
     margin: 0;
@@ -750,7 +738,7 @@ footer > li a:hover {
 
 
 
- /*MEDIA QUERIES(responsive screen styling section)*/
+ /*MEDIA QUERIES(responsive screen styling section)-----------------------*/
  @media(max-width:1400px){
     .container-info{
         flex-wrap: wrap;
@@ -800,9 +788,7 @@ footer > li a:hover {
         align-items: center;
         margin: 0;
         padding: 0;
-        height: fit-content;
-       
-        
+        height: fit-content;    
    }
 
    .profile-about{    
@@ -823,7 +809,7 @@ footer > li a:hover {
    #skills{
     padding: 20px 20px 0 20px;
     margin: 0;
-    background: #C69749;
+    background: whitesmoke;
    }
    
    .project-details-container{
@@ -861,15 +847,12 @@ footer > li a:hover {
         font-size: 24px;
     }
 
-   
     .nav-content > h1{
-        font-size: 32px;
-        
+        font-size: 32px;   
     }
     
     .p2{
         font-size: 20px;
-
     }
 
     #about{
@@ -879,10 +862,8 @@ footer > li a:hover {
 
     .experience-box-li{
         text-align:center;
-        margin: 1rem 0.5rem 0.5rem 0.5rem;
-        
- }
-
+        margin: 1rem 0.5rem 0.5rem 0.5rem;  
+    } 
 
     .aboutme-profile  {
         display: flex;
@@ -891,7 +872,6 @@ footer > li a:hover {
         margin: 0;
         padding: 0;
         height: fit-content;
-
    }
 
     .profile-about{    
@@ -908,7 +888,6 @@ footer > li a:hover {
 
    .project-img{
     height: 190px;
-
    }
 
     #contact, #footer {
@@ -987,10 +966,8 @@ footer > li a:hover {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-bottom: 10rem;
-        
+        padding-bottom: 10rem;   
     }
-
 
     .aboutme-profile {
         justify-content: center;
@@ -1001,8 +978,13 @@ footer > li a:hover {
       .profile-img{
         height: 175px;
       }
+
+         .profile-about{    
+        height: 184px;
+        width: 327px;
        
-     
+   }
+       
    .project-item{
     margin: 0rem 0rem 0rem 0rem;
    }

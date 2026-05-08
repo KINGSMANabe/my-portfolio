@@ -1,15 +1,28 @@
-// Active link highlighting on scroll
-const sections = document.querySelectorAll('section');
-const navLinks = document.querySelectorAll('.nav-links li a, .menu-links .menu a');
-
+// ─── Single scroll listener (performance) ───────────────────────────────────
 window.addEventListener('scroll', () => {
-    let current = '';
+    // 1. Sticky navbar
+    const navbar       = document.getElementById('navbar');
+    const hamburgerNav = document.getElementById('hamburger-nav');
+    const navHeight    = (navbar || hamburgerNav).offsetHeight;
 
-    // Check if user is at the very bottom of the page
+    if (window.scrollY > 0) {
+        navbar?.classList.add('sticky');
+        hamburgerNav?.classList.add('sticky');
+        document.body.style.paddingTop = navHeight + 'px';
+    } else {
+        navbar?.classList.remove('sticky');
+        hamburgerNav?.classList.remove('sticky');
+        document.body.style.paddingTop = '0px';
+    }
+
+    // 2. Scrollspy — active nav link
+    const sections = document.querySelectorAll('section');
+    const navLinks  = document.querySelectorAll('.nav-links li a, .menu-links .menu a');
+    let current     = '';
+
     const isAtBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - 50;
 
     if (isAtBottom) {
-        // Force highlight the last nav link (Contact)
         current = 'contact';
     } else {
         sections.forEach(section => {
@@ -26,27 +39,15 @@ window.addEventListener('scroll', () => {
             link.classList.add('active');
         }
     });
-});
-// Sticky navbar on scroll
-window.addEventListener('scroll', () => {
-    const navbar = document.getElementById('navbar');
-    const hamburgerNav = document.getElementById('hamburger-nav');
-    const navHeight = (navbar || hamburgerNav).offsetHeight;
 
-    if (window.scrollY > 0) {
-        navbar?.classList.add('sticky');
-        hamburgerNav?.classList.add('sticky');
-        // Add padding to body equal to nav height to prevent jump
-        document.body.style.paddingTop = navHeight + 'px';
-    } else {
-        navbar?.classList.remove('sticky');
-        hamburgerNav?.classList.remove('sticky');
-        // Remove padding when back at top
-        document.body.style.paddingTop = '0px';
+    // 3. Scroll-to-top button visibility
+    const mybutton = document.getElementById('scroll-up-btn');
+    if (mybutton) {
+        mybutton.style.display = window.scrollY > 400 ? 'block' : 'none';
     }
 });
 
-// Hamburger menu toggle
+// ─── Hamburger menu toggle ───────────────────────────────────────────────────
 function toggleMenu() {
     const menu = document.querySelector('.menu-links');
     const icon = document.querySelector('.hamburger-icon');
@@ -55,19 +56,12 @@ function toggleMenu() {
     icon.classList.toggle('open');
 }
 
-// Scroll-to-top button visibility
-function ScrollToTop() {
-    const mybutton = document.getElementById('scroll-up-btn');
-    if (!mybutton) return;
-    mybutton.style.display = window.scrollY > 400 ? 'block' : 'none';
-}
-
-window.addEventListener('scroll', ScrollToTop);
-
+// ─── Scroll to top ───────────────────────────────────────────────────────────
 function topFunction() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+// ─── Swiper initialization ───────────────────────────────────────────────────
 const projectSwiper = new Swiper('.project-swiper', {
        loop:true,
        spaceBetween: 24,
@@ -97,4 +91,3 @@ const projectSwiper = new Swiper('.project-swiper', {
          },
        },
      });
-  
