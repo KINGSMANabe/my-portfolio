@@ -1,21 +1,7 @@
 // ─── Single scroll listener (performance) ───────────────────────────────────
 window.addEventListener('scroll', () => {
-    // 1. Sticky navbar
-    const navbar       = document.getElementById('navbar');
-    const hamburgerNav = document.getElementById('hamburger-nav');
-    const navHeight    = (navbar || hamburgerNav).offsetHeight;
-
-    if (window.scrollY > 0) {
-        navbar?.classList.add('sticky');
-        hamburgerNav?.classList.add('sticky');
-        document.body.style.paddingTop = navHeight + 'px';
-    } else {
-        navbar?.classList.remove('sticky');
-        hamburgerNav?.classList.remove('sticky');
-        document.body.style.paddingTop = '0px';
-    }
-
-    // 2. Scrollspy — active nav link
+   
+    // 1. Scrollspy — active nav link
     const sections = document.querySelectorAll('section');
     const navLinks  = document.querySelectorAll('.nav-links li a, .menu-links .menu a');
     let current     = '';
@@ -40,7 +26,7 @@ window.addEventListener('scroll', () => {
         }
     });
 
-    // 3. Scroll-to-top button visibility
+    // 2. Scroll-to-top button visibility
     const mybutton = document.getElementById('scroll-up-btn');
     if (mybutton) {
         mybutton.style.display = window.scrollY > 400 ? 'block' : 'none';

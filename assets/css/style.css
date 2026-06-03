@@ -59,42 +59,25 @@ li{
 
 
 /*navbar-------------------------------------------------------------------*/
-
 #navbar{
-    position: relative;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
     padding: 0 10rem;
+    width: 100%;
 }
 
 .navbar{
     text-transform: uppercase;
     display: flex;
-    height: 9vh;
+    height: 7vh;
     justify-content:space-between;
     align-items: center;
     color: #fff;
     background-color: rgb(3, 2, 0);
 }
 
-#navbar.sticky{
-    position: fixed;
-    height: 5vh;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    transition: top 0.3s ease;
-    background-color: rgb(3, 2, 0);
-}
 
-#hamburger-nav.sticky{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    transition: top 0.3s ease;
-    background-color: rgb(3, 2, 0);
-}
 
 .my-name{
     font-size: 30px;
@@ -120,7 +103,6 @@ li{
 
 .nav-links >li{
     cursor: pointer;
-   
     text-decoration: none; 
 }
 
@@ -150,10 +132,12 @@ li{
 /*Hamburger menu----------------------------------------*/
 #hamburger-nav{
     display: none;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .hamburger-menu{
-    position: relative;
     display: flex;
 }
 
@@ -241,7 +225,7 @@ li{
     background-color: #C69749;
     border-radius: 0px 0px 0px 500px;
     margin: 0;
-    height: 95vh;
+    height: 100vh;
     
 }
 
@@ -440,54 +424,71 @@ li{
  }
 
  /*skills section----------------------------------------------------------*/
- #skills{
+ #skills {
     position: relative;
-    height: fit-content;
-    margin: 0rem 0rem  0rem 0rem;
-    padding: 3rem 9rem 3rem 9rem;
-    background-color: whitesmoke;
- }
-
- .skills-details-container{
     display: flex;
-    justify-content: center;
     flex-direction: column;
-        align-items: center;
-        height: fit-content;
-        gap: 2rem;
- }
-
- .skills-sub-title{
-    color: #333333;
-    font-weight: 500;
-    font-size: 1.75rem;
-    margin-bottom: 2rem;  
- }
-
-.article-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 1.5rem;
-    justify-content: center;  /* ← center icons instead of space-around */
-    align-items: flex-start;  /* ← keep icons top-aligned */
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    min-height: fit-content;
+    margin: 0;
+    padding: 2rem 9rem 3rem 9rem;
+    background-color: black;
 }
 
-article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.toolP {
     text-align: center;
     color: #C69749;
-    font-weight: bold;
-    width: 80px;              /* ← fixed width stops uneven wrapping */
-    gap: 0.4rem;
-    
+    letter-spacing: 1px;
+}
+        
+.toolsCont img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
 }
 
-article h3 {
-    font-size: 0.85rem;
-    font-weight: 600; 
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    max-width: 800px;       
+    margin: 1.5rem auto 0;  /* ← auto centers the ul itself */
+}
+
+.toolsCont {
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: flex;              
+    flex-direction: column;   
+    align-items: center;       
+    justify-content: center;   
+    padding: 10px;              
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.toolsCont p {
+    font-size: 11px;
+    font-weight: 600;
+    color: #C69749;         
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.3;
+    margin-top: 4px;
+}
+
+.toolsCont:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(198, 151, 73, 0.4);
 }
 
    /*projects section----------------------------------------------------------*/
@@ -806,11 +807,25 @@ footer > li a:hover {
     margin-bottom: 25px;
    }
    
-   #skills{
-    padding: 20px 20px 0 20px;
-    margin: 0;
-    background: whitesmoke;
-   }
+   #skills {
+    padding: 2rem 2rem 3rem 2rem;
+    height: fit-content;
+    background-color: black; /* keep black, yours turns whitesmoke */
+}
+
+.tools {
+    max-width: 700px;
+}
+
+.toolsCont {
+    width: 110px;
+    height: 130px;
+}
+
+.toolsCont img {
+    width: 55px;
+    height: 55px;
+}
    
    .project-details-container{
     flex-direction: column;
@@ -880,6 +895,33 @@ footer > li a:hover {
         width: 356px;
         padding: 0;
    }
+
+   #skills {
+    padding: 2rem 1rem 3rem 1rem;
+    background-color: black;
+}
+
+.tools {
+    max-width: 100%;
+    gap: 8px;
+}
+
+.toolsCont {
+    width: 85px;
+    height: 110px;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+.toolsCont img {
+    width: 45px;
+    height: 45px;
+}
+
+.toolsCont p {
+    font-size: 9px;
+    letter-spacing: 0.3px;
+}
 
    #projects {
     margin: 0;
@@ -981,14 +1023,36 @@ footer > li a:hover {
 
          .profile-about{    
         height: 184px;
-        width: 327px;
-       
+        width: 327px;    
    }
+
+   #skills {
+    padding: 1.5rem 0.5rem 2rem 0.5rem;
+    background-color: black;
+}
+
+.toolsCont {
+    width: 70px;
+    height: 95px;
+    border-radius: 10px;
+    padding: 6px;
+}
+
+.toolsCont img {
+    width: 38px;
+    height: 38px;
+}
+
+.toolsCont p {
+    font-size: 8px;
+    letter-spacing: 0px;
+}
        
    .project-item{
     margin: 0rem 0rem 0rem 0rem;
    }
-#contact{
+
+  #contact{
     height: fit-content;
     padding: 2rem 1rem 0rem 1rem;
     
