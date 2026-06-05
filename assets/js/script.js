@@ -40,9 +40,9 @@ window.addEventListener('scroll', () => {
 // ─── Typing animation ────────────────────────────────────────────────────────
 const typedText = document.getElementById('typed-text');
 const phrases   = [
-    'An IT Professional..',
-    'A VA Aspirant..',
-    'A Cyclist..',
+    'an IT Professional..',
+    'a VA Aspirant..',
+    'a Cyclist..',
 ];
 
 let phraseIndex = 0;
