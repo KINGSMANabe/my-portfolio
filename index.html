@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abe Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style_v2.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -21,7 +20,7 @@
               <div>
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>      
-                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#skills">Tech & Tools</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -41,7 +40,7 @@
       </div>
       <div class=" menu-links">
         <li class="menu"><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li class="menu"><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li class="menu"><a href="#skills" onclick="toggleMenu()">Tech & Tools</a></li>
         <li class="menu"><a href="#projects" onclick="toggleMenu()">Projects</a></li>
         <li class="menu"><a href="#contact" onclick="toggleMenu()">Contact</a></li>
       </div>
@@ -77,7 +76,8 @@
                 <h1 class="section-title">About Me</h1>
             <div class="about-me-container">
             <div class="aboutme-profile">
-                <video class="profile-about" src="./assets/videos/me_v4.mp4" alt="profile picture" autoplay muted loop>
+                <video class="profile-about" src="./assets/videos/me_v4.mp4" autoplay muted loop>
+                  <p>Your browser doesn't support video.</p>
                 </video>
             </div>
                 <div class="aboutme-divbox">
@@ -86,10 +86,10 @@
                         <img class="container-infobox-icon" src="./assets/svg/work-experience-icon.svg" alt="Experience Icon">
                         <h3>Experience <br><br></h3>
                             <ul class="experience-box-li">
-                                <li>- <span>DHL Supply Chain Philippines</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;7 months IT Specialist</li><br>
-                                <li>- <span>Carelon Global Solutions</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;8 months US-Based Customer Service Representative</li><br>
-                                <li>- <span>Family Business</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;1 year Family business Operations Assistant </li><br>
-                                <li>- <span>Go Crayons</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;500 hrs Frontend Web development internship </li>
+                                <li> <span>DHL Supply Chain Philippines</span> <br>&nbsp;&nbsp;&nbsp;6 months IT Specialist</li><br>
+                                <li> <span>Carelon Global Solutions</span> <br>&nbsp;&nbsp;&nbsp;8 months US-Based Customer Service Representative</li><br>
+                                <li> <span>Family Business</span> <br>&nbsp;&nbsp;&nbsp;1 year Family business Operations Assistant </li><br>
+                                <li> <span>Go Crayons</span> <br>&nbsp;&nbsp;&nbsp;500 hrs Frontend Web development internship </li>
                             </ul>
                     </div>
 
@@ -122,7 +122,7 @@
 
  <!-- Skills ---------------------------------------->
     <section id="skills">
-    <p class="section-text-p toolP">TECHNOLOGIES &</p>
+    <p class="section-text-p toolP">Technologies &</p>
     <h1 class="section-title toolP">TOOLS</h1>
     <div class="containers skills-details-container">
         <ul class="tools">
@@ -161,8 +161,8 @@
               <img src="./assets/projects/tindog-project.png" alt="Tindog Website" class="project-img">
               <h2 class="experience-sub-title project-title">Tindog</h2>
               <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/KINGSMANabe/Demo-bootstrap','_blank')">Github</button>
-                <button class="btn btn-color-2 project-btn" onclick="window.open('https://kingsmanabe.github.io/Demo-bootstrap/','_blank')">Live Demo</button>
+                <button class="btn btn-color-2 project-btn project-btn-container" onclick="window.open('https://github.com/KINGSMANabe/Demo-bootstrap','_blank')">Github</button>
+                <button class="btn btn-color-2 project-btn project-btn-container" onclick="window.open('https://kingsmanabe.github.io/Demo-bootstrap/','_blank')">Live Demo</button>
               </div>
             </li>
 
@@ -171,8 +171,8 @@
               <img src="./assets/projects/barbers-project.png" alt="Barbers Website" class="project-img barbers-temp">
               <h2 class="experience-sub-title project-title">Barbers  (ongoing)</h2>
               <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/KINGSMANabe/Barbers-webpage-sideproject','_blank')">Github</button>
-                <button class="btn btn-color-2 project-btn" onclick="window.open('https://kingsmanabe.github.io/Barbers-webpage-sideproject/','_blank')">Live Demo</button>
+                <button class="btn btn-color-2 project-btn project-btn-container" onclick="window.open('https://github.com/KINGSMANabe/Barbers-webpage-sideproject','_blank')">Github</button>
+                <button class="btn btn-color-2 project-btn project-btn-container" onclick="window.open('https://kingsmanabe.github.io/Barbers-webpage-sideproject/','_blank')">Live Demo</button>
               </div>
             </li>
 
@@ -181,8 +181,8 @@
               <img src="./assets/projects/Drumkit.png" alt="Drum Kit Project" class="project-img">
               <h2 class="experience-sub-title project-title">Drum Kit</h2>
               <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/KINGSMANabe/Drumkit','_blank')">Github</button>
-                <button class="btn btn-color-2 project-btn" onclick="window.open('https://kingsmanabe.github.io/Drumkit/','_blank')">Live Demo</button>
+                <button class="btn btn-color-2 project-btn project-btn-container" onclick="window.open('https://github.com/KINGSMANabe/Drumkit','_blank')">Github</button>
+                <button class="btn btn-color-2 project-btn project-btn-container" onclick="window.open('https://kingsmanabe.github.io/Drumkit/','_blank')">Live Demo</button>
               </div>
             </li>
 
@@ -191,15 +191,14 @@
               <img src="./assets/images/coming-soon.png" alt="Coming Soon" class="project-img">
               <h2 class="experience-sub-title project-title">Coming Soon</h2>
               <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="window.open('https://')">Github</button>
-                <button class="btn btn-color-2 project-btn" onclick="window.open('https://')">Live Demo</button>
+                <button class="btn btn-color-2 project-btn project-btn-container" onclick="window.open('https://')">Github</button>
+                <button class="btn btn-color-2 project-btn project-btn-container" onclick="window.open('https://')">Live Demo</button>
               </div>
             </li>
           </ul>
             <!-- Navigation buttons --> 
             <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev">
-        </div>
+            <div class="swiper-button-prev"></div>
         </div>
           <!-- Pagination -->
           <div class="swiper-pagination"></div>
@@ -232,13 +231,13 @@
           <div class="nav-links-container">
             <ul class="footer nav-links">
               <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
+              <li><a href="#skills">Tech & Tools</a></li>
               <li><a href="#projects">Projects</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
         </nav>
-        <p><i>Copyright © 2026 Abraham Appiah. All Rights Reserved.</i></p>
+        <p class="footer-text">Made with ❤️ by <a class="footer-link" href="https://www.linkedin.com/in/abeappiah/" target="_blank">Abe</a> @ 2026</p>
       </footer>
 
     <!-- Scripts -->  

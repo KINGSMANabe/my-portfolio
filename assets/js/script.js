@@ -12,7 +12,10 @@ window.addEventListener('scroll', () => {
         current = 'contact';
     } else {
         sections.forEach(section => {
-            const sectionTop = section.offsetTop - 120;
+            const navHeight = document.getElementById('navbar')?.offsetHeight 
+                   || document.getElementById('hamburger-nav')?.offsetHeight 
+                   || 80;
+            const sectionTop = section.offsetTop - navHeight - 20;
             if (window.scrollY >= sectionTop) {
                 current = section.getAttribute('id');
             }
