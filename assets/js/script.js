@@ -36,6 +36,60 @@ window.addEventListener('scroll', () => {
     }
 });
 
+
+// ─── Typing animation ────────────────────────────────────────────────────────
+const typedText = document.getElementById('typed-text');
+const phrases   = [
+    'An IT Professional..',
+    'A VA Aspirant..',
+    'A Cyclist..',
+];
+
+let phraseIndex = 0;
+let charIndex   = 0;
+let isDeleting  = false;
+
+const TYPING_SPEED   = 80;
+const DELETING_SPEED = 40;
+const PAUSE_AFTER    = 1800;
+
+function type() {
+    const currentPhrase = phrases[phraseIndex];
+
+    if (!isDeleting) {
+        // Type forward
+        charIndex++;
+        typedText.textContent = currentPhrase.slice(0, charIndex);
+
+        if (charIndex === currentPhrase.length) {
+            // Phrase complete — pause then start deleting
+            setTimeout(() => {
+                isDeleting = true;
+                type();
+            }, PAUSE_AFTER);
+            return;
+        }
+        setTimeout(type, TYPING_SPEED);
+
+    } else {
+        // Delete backward
+        charIndex--;
+        typedText.textContent = currentPhrase.slice(0, charIndex);
+
+        if (charIndex === 0) {
+            // Fully deleted — move to next phrase
+            isDeleting = false;
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+            setTimeout(type, 400);
+            return;
+        }
+        setTimeout(type, DELETING_SPEED);
+    }
+}
+
+// Kick off after a short delay
+setTimeout(type, 500);
+
 // ─── Hamburger menu toggle ───────────────────────────────────────────────────
 function toggleMenu() {
     const menu = document.querySelector('.menu-links');
@@ -44,6 +98,7 @@ function toggleMenu() {
     menu.classList.toggle('open');
     icon.classList.toggle('open');
 }
+
 
 // ─── Scroll to top ───────────────────────────────────────────────────────────
 function topFunction() {

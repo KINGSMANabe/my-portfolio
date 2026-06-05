@@ -303,6 +303,20 @@ section {
     height: auto;
 }
 
+/* Typing cursor blink */
+.cursor {
+    display: inline-block;
+    font-weight: 300;
+    color: var(--color-dark);
+    animation: blink 0.7s step-end infinite;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+}
+
 .nav-content {
     text-align: center;
     line-height: 1.5;
