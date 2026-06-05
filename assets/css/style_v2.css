@@ -336,7 +336,6 @@ section {
 
 .p2 {
     font-size: var(--fs-md);
-    text-transform: uppercase;
     letter-spacing: 2px;
 }
 
