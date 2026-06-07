@@ -4,10 +4,10 @@ This portfolio is made using HTML, CSS, and Vanilla JS. Need to study frameworks
 
 Features include:
 
--Responsive design
--Sticky navigation
--Scrollspy section tracking
--Swiper project carousel
--Resume download
+Responsive design
+| Sticky navigation
+| Scrollspy section tracking
+| Swiper project carousel
+| Resume download
 
 Technologies: HTML, CSS, JavaScript, Swiper.js
