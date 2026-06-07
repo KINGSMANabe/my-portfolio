@@ -151,60 +151,63 @@
 </section>
 
  <!-- Projects ---------------------------------------->
-    <section id="projects">
-        <p class="section-text-p">Browse my recent</p>
-        <h1 class="section-title">Projects</h1>
-        <div class="swiper-clip-wrapper">
+<section id="projects">
+    <p class="section-text-p">Browse my recent</p>
+    <h1 class="section-title">Projects</h1>
+
+    <!-- Clip wrapper — only clips the slides, not the pagination -->
+    <div class="swiper-clip-wrapper">
         <div class="swiper project-swiper">
-          <ul class="swiper-wrapper project-list">
+            <ul class="swiper-wrapper project-list">
 
-            <!-- Slide 1 -->
-            <li class="swiper-slide project-item">
-              <img src="./assets/projects/tindog-project.png" alt="Tindog Website" class="project-img">
-              <h2 class="experience-sub-title project-title">Tindog</h2>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn project-btn-container" onclick="window.open('https://github.com/KINGSMANabe/Demo-bootstrap','_blank')">Github</button>
-                <button class="btn btn-color-2 project-btn project-btn-container" onclick="window.open('https://kingsmanabe.github.io/Demo-bootstrap/','_blank')">Live Demo</button>
-              </div>
-            </li>
+                <!-- Slide 1 -->
+                <li class="swiper-slide project-item">
+                    <img src="./assets/projects/tindog-project.png" alt="Tindog Website" class="project-img">
+                    <h2 class="experience-sub-title project-title">Tindog</h2>
+                    <div class="project-btn-container">
+                        <button class="btn project-btn" onclick="window.open('https://github.com/KINGSMANabe/Demo-bootstrap','_blank')">Github</button>
+                        <button class="btn project-btn" onclick="window.open('https://kingsmanabe.github.io/Demo-bootstrap/','_blank')">Live Demo</button>
+                    </div>
+                </li>
 
-            <!-- Slide 2 -->
-            <li class="swiper-slide project-item">
-              <img src="./assets/projects/barbers-project.png" alt="Barbers Website" class="project-img barbers-temp">
-              <h2 class="experience-sub-title project-title">Barbers  (ongoing)</h2>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn project-btn-container" onclick="window.open('https://github.com/KINGSMANabe/Barbers-webpage-sideproject','_blank')">Github</button>
-                <button class="btn btn-color-2 project-btn project-btn-container" onclick="window.open('https://kingsmanabe.github.io/Barbers-webpage-sideproject/','_blank')">Live Demo</button>
-              </div>
-            </li>
+                <!-- Slide 2 -->
+                <li class="swiper-slide project-item">
+                    <img src="./assets/projects/barbers-project.png" alt="Barbers Website" class="project-img barbers-temp">
+                    <h2 class="experience-sub-title project-title">Barbers (ongoing)</h2>
+                    <div class="project-btn-container">
+                        <button class="btn project-btn" onclick="window.open('https://github.com/KINGSMANabe/Barbers-webpage-sideproject','_blank')">Github</button>
+                        <button class="btn project-btn" onclick="window.open('https://kingsmanabe.github.io/Barbers-webpage-sideproject/','_blank')">Live Demo</button>
+                    </div>
+                </li>
 
-            <!-- Slide 3 -->
-            <li class="swiper-slide project-item">
-              <img src="./assets/projects/Drumkit.png" alt="Drum Kit Project" class="project-img">
-              <h2 class="experience-sub-title project-title">Drum Kit</h2>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn project-btn-container" onclick="window.open('https://github.com/KINGSMANabe/Drumkit','_blank')">Github</button>
-                <button class="btn btn-color-2 project-btn project-btn-container" onclick="window.open('https://kingsmanabe.github.io/Drumkit/','_blank')">Live Demo</button>
-              </div>
-            </li>
+                <!-- Slide 3 -->
+                <li class="swiper-slide project-item">
+                    <img src="./assets/projects/Drumkit.png" alt="Drum Kit Project" class="project-img">
+                    <h2 class="experience-sub-title project-title">Drum Kit</h2>
+                    <div class="project-btn-container">
+                        <button class="btn project-btn" onclick="window.open('https://github.com/KINGSMANabe/Drumkit','_blank')">Github</button>
+                        <button class="btn project-btn" onclick="window.open('https://kingsmanabe.github.io/Drumkit/','_blank')">Live Demo</button>
+                    </div>
+                </li>
 
-            <!-- Slide 4 -->
-            <li class="swiper-slide project-item">
-              <img src="./assets/images/coming-soon.png" alt="Coming Soon" class="project-img">
-              <h2 class="experience-sub-title project-title">Coming Soon</h2>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn project-btn-container" onclick="window.open('https://')">Github</button>
-                <button class="btn btn-color-2 project-btn project-btn-container" onclick="window.open('https://')">Live Demo</button>
-              </div>
-            </li>
-          </ul>
-            <!-- Navigation buttons --> 
+                <!-- Slide 4 -->
+                <li class="swiper-slide project-item">
+                    <img src="./assets/images/coming-soon.png" alt="Coming Soon" class="project-img">
+                    <h2 class="experience-sub-title project-title">Coming Soon</h2>
+                    <div class="project-btn-container">
+                        <button class="btn project-btn" onclick="window.open('https://')">Github</button>
+                        <button class="btn project-btn" onclick="window.open('https://')">Live Demo</button>
+                    </div>
+                </li>
+            </ul>
+            <!-- Pagination arrows -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
-          <!-- Pagination -->
-          <div class="swiper-pagination"></div>
-    </section>
+    </div>
+    <!-- Pagination dots -->
+    <div class="swiper-project-pagination"></div>
+</section>
 
  <!-- Contact ---------------------------------------->
     <section id="contact">

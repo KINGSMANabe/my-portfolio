@@ -117,7 +117,7 @@ const projectSwiper = new Swiper('.project-swiper', {
       }, 
 
        pagination: {
-         el: '.swiper-pagination',
+         el: '.swiper-project-pagination',
          clickable: true,
        },
        navigation: {
