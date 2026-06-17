@@ -90,6 +90,47 @@ function type() {
 // Kick off after a short delay
 setTimeout(type, 500);
 
+
+// ─── Dropdown: tap/click to open, tap outside to close ───────────────────────
+const dropdownTriggers = document.querySelectorAll('.cv-dropdown > .btn1, .cv-dropdown > .btn2');
+
+dropdownTriggers.forEach(trigger => {
+    trigger.addEventListener('click', (e) => {
+        e.stopPropagation(); // stop this click from also triggering the "outside click" closer below
+
+        const dropdown = trigger.closest('.cv-dropdown');
+        const isOpen   = dropdown.classList.contains('open');
+
+        // Close any other open dropdown first
+        document.querySelectorAll('.cv-dropdown.open').forEach(d => {
+            if (d !== dropdown) d.classList.remove('open');
+        });
+
+        dropdown.classList.toggle('open', !isOpen);
+    });
+});
+
+// Tap/click anywhere outside any dropdown — close all
+document.addEventListener('click', (e) => {
+    if (!e.target.closest('.cv-dropdown')) {
+        document.querySelectorAll('.cv-dropdown.open').forEach(d => d.classList.remove('open'));
+    }
+});
+
+// Close dropdown automatically once a CV link is tapped
+document.querySelectorAll('.cv-dropdown-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        const dropdown = link.closest('.cv-dropdown');
+        dropdown?.classList.remove('open');
+        dropdown?.classList.add('force-reset');
+
+        // Remove the temporary class after the transition finishes
+        setTimeout(() => {
+            dropdown?.classList.remove('force-reset');
+        }, 350);
+    });
+});
+
 // ─── Hamburger menu toggle ───────────────────────────────────────────────────
 function toggleMenu() {
     const menu = document.querySelector('.menu-links');
