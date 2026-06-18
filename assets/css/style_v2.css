@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 :root {
   /* Brand colours */
@@ -71,7 +71,7 @@ html {
 
 body {
   background-color: var(--color-white);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: var(--color-text);
   line-height: 1.6;
   /* Prevent horizontal overflow globally */
@@ -124,6 +124,10 @@ section {
   scroll-margin-top: calc(var(--nav-height) + 1rem);
 }
 
+.section-title, .section-text-p {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 /* ── 5. NAVBAR ───────────────────────────────────────────────────────────── */
 
 #navbar {
@@ -133,6 +137,7 @@ section {
   width: 100%;
   z-index: 1000;
   padding: 0 var(--section-pad-x);
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .navbar {
@@ -148,6 +153,7 @@ section {
 }
 
 .my-name {
+
   font-size: clamp(1.2rem, 2vw, 1.8rem);
   font-weight: 700;
   color: var(--color-primary);
@@ -195,6 +201,7 @@ section {
   align-items: center;
   height: 8vh;
   background-color: var(--color-black);
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .hamburger-menu {
@@ -267,8 +274,8 @@ section {
   text-transform: uppercase;
   padding: var(--space-lg);
   font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: 5px;
+  font-weight: 300;
+  letter-spacing: 3px;
   color: var(--color-primary);
   transition: var(--transition-fast);
 }
@@ -288,6 +295,7 @@ section {
   min-height: 100svh;
   display: flex;
   align-items: center;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .nav-section {
@@ -304,6 +312,11 @@ section {
   border-radius: var(--radius-full);
   width: clamp(200px, 25vw, 400px); /* fluid width */
   height: auto;
+}
+
+#typed-text{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 
 /* Typing cursor blink */
@@ -333,16 +346,39 @@ section {
 .nav-content > h1 {
   font-size: var(--fs-hero);
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 2px;
 }
+
+/* Waving hand animation */
+.wave-emoji {
+    display: inline-block;
+    transform-origin: 70% 70%; /* pivots from the wrist, not the center */
+    animation: wave 2.5s ease-in-out 1;
+}
+
+@keyframes wave {
+    0%, 60%, 100% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(14deg);
+    }
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
 
 .p1 {
-  font-size: var(--fs-base);
-  letter-spacing: 2px;
-}
-
-.p2 {
   font-size: var(--fs-md);
   letter-spacing: 2px;
 }
@@ -583,6 +619,11 @@ section {
   color: var(--color-text);
   font-size: var(--fs-sm);
   margin-top: var(--space-md);
+}
+
+.container-infobox > h3 {
+  font-size: var(--fs-md);
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .infobox-box-text {
