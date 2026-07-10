@@ -309,7 +309,7 @@ section {
 }
 
 .profile-img {
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   width: clamp(200px, 25vw, 400px); /* fluid width */
   height: auto;
 }
